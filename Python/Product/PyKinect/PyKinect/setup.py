@@ -85,7 +85,7 @@ class pykinect_build_ext(build_ext):
         
         return filenames
 
-kinectsdk_dir = os.environ.get('KINECTSDK10_DIR', '')
+kinectsdk_dir = os.environ.get('KINECTSDK_DIR', '')
 if kinectsdk_dir:
     kinectsdk_inc = os.path.join(kinectsdk_dir, 'inc')
     kinectsdk_lib = os.path.join(kinectsdk_dir, 'lib', distutils.msvc9compiler.PLAT_TO_VCVARS[get_platform()])
